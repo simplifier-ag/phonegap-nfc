@@ -1,3 +1,25 @@
+= 1.2.0 =
+iOS allow tag read and write in same session #419
+
+= 1.1.2 =
+Android Fix null pointer exception and possible crash #415 Thanks pschlang 
+iOS Notify Cordova on Successful Tag Write - #408 Thanks H0schi 
+iOS NDEF tags with no messages causes Read Failed #416
+
+= 1.1.1 =
+CoreNFC Framework is optional #400 Thanks M3skar and wux-shuto
+
+= 1.1.0 =
+Implement nfc.write for iOS
+New iOS specific APIs
+ * scanNdef
+ * scanTag
+ * cancelScan    
+Deprecated old iOS APIs
+ * beginSession
+ * invalidate
+Remove usage of UIWebView and WKWebView. Send event data to Javascript via the channel callback.
+
 = 1.0.4 =
 Added TAG string for iOS entitlement compatibility #376 Thanks ActionZachson
 Add DeviceCapability proximity for Windows 10 builds #358 #265 Thanks DirkHeinke
