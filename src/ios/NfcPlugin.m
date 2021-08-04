@@ -369,9 +369,9 @@
     }
     
     if (status == NFCNDEFStatusReadOnly) {
-        metaData[@"isWritable"] = @FALSE;
+        metaData[@"isWritable"] = @NO;
     } else if (status == NFCNDEFStatusReadWrite) {
-        metaData[@"isWritable"] = @TRUE;
+        metaData[@"isWritable"] = @YES;
     }
     
     [tag readNDEFWithCompletionHandler:^(NFCNDEFMessage * _Nullable message, NSError * _Nullable error) {
